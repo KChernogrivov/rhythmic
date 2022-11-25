@@ -2,15 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Righteous';
 }
 
 .header {
     width: 100%;
-    background-color: #212121;
 }
 
 body {
-    background-color: 	#535353;
+    background: #1E1E1E;
 }
 
 .wrapper {
@@ -25,13 +25,68 @@ body {
 .nav__list {
     display: flex;
     list-style: none;
-}
-
-.nav__element {
-    margin-right: 15px;
+    gap: 30px;
 }
 
 .nav__link {
     text-decoration: none;
     color: 	#b3b3b3;
+    font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+/* identical to box height */
+
+
+color: #B3B3B3;
+}
+
+.header__logo {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 60px;
+    color: #1DB954;
+    text-transform: uppercase;
+}
+
+.header__accout {
+    Width: 182px;
+    Height: 46px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 30px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #D9D9D9;
+    border: 1px solid #B3B3B3;
+    border-radius: 10px;
+}
+
+.header__accout > p {
+    font-family: 'Righteous';
+    font-size: 1rem;
+    line-height:29.8px;
+    text-align: Center;
+    margin: 0 auto;
+}
+
+.header__searchField {
+    font-size: 1.2rem;
+    background-color: inherit;
+    color: #B3B3B3;
+    border: 0;
+    border-bottom: 1px solid #535353;
+    outline: 0 !important;
+}
+
+.form__submit {
+    background-color: inherit;
+    outline: 0 !important;
+    border: 0;
+    cursor: pointer;
 }
