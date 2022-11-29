@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,39 +8,88 @@
     <title>Rhythmic - home</title>
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-        <header class="header">
-            <div class="wrapper">
-                <p class="header__logo">
-                    Rhythmic
-                </p>
-                <div class="nav header__nav">
-                    <ul class="nav__list">
-                        <li class="nav__element"><a href="#" class="nav__link">ABOUT</a></li>
-                        <li class="nav__element"><a href="#" class="nav__link">CONTACT US</a></li>
-                    </ul>
+    <header class="header">
+        <div class="header__wrapper">
+            <h1 class="header__logo">
+                Rhythmic
+            </h1>
+            <div class="nav header__nav">
+                <ul class="nav__list">
+                    <li class="nav__element"><a href="#" class="nav__link">ABOUT</a></li>
+                    <li class="nav__element"><a href="#" class="nav__link">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="header__search">
+                <form action="/home.html" method="POST" class="form form__header"></form>
+                <label for="search">
+                    <input class="header__searchField" type="text" name="search" placeholder="SEARCH...">
+                </label>
+                <button type="submit" class="form__submit">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.7479 18.5675L14.0096 12.8251C15.1409 11.4684 15.8213 9.73459 15.8213 7.84095C15.8213 3.52083 12.2758 0.00817871 7.91475 0.00817871C3.55364 0.00817871 0 3.52493 0 7.84505C0 12.1652 3.54544 15.6778 7.90655 15.6778C9.7592 15.6778 11.4643 15.0425 12.8169 13.9809L18.5757 19.7397C18.9118 20.0758 19.4118 20.0758 19.7479 19.7397C20.084 19.4036 20.084 18.9036 19.7479 18.5675ZM1.6805 7.84505C1.6805 4.45126 4.47587 1.69278 7.90655 1.69278C11.3372 1.69278 14.1326 4.45126 14.1326 7.84505C14.1326 11.2388 11.3372 13.9973 7.90655 13.9973C4.47587 13.9973 1.6805 11.2347 1.6805 7.84505Z"
+                            fill="#B3B3B3" />
+                    </svg>
+                </button>
+            </div>
+            <div class="header__account">
+                <a href="#">login</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="section">
+            <h2 class="section__title">
+                Overview
+            </h2>
+            <ul class="section__list">
+                <li class="section__element"><a href="#"></a> Overview</li>
+                <li class="section__element"><a href="#"></a> My music</li>
+                <li class="section__element"><a href="#"></a> Top charts</li>
+                <li class="section__element"><a href="#"></a> Newest</li>
+                <li class="section__element"><a href="#"></a> Artists</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2 class="section__title">
+                Artists
+            </h2>
+            <div class="slider-container">
+                <div class="arrow-left">
+                    <div class="arrow-bg">
+                        <div class="arrow"></div>
+                    </div>
                 </div>
-                <div class="header__search">
-                    <form action="/home.html" method="POST" class="form form__header"></form>
-                    <label for="search">
-                        <input class="header__searchField" type="text" name="search" placeholder="SEARCH...">
-                    </label>
-                    <button type="submit" class="form__submit">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19.7479 18.5675L14.0096 12.8251C15.1409 11.4684 15.8213 9.73459 15.8213 7.84095C15.8213 3.52083 12.2758 0.00817871 7.91475 0.00817871C3.55364 0.00817871 0 3.52493 0 7.84505C0 12.1652 3.54544 15.6778 7.90655 15.6778C9.7592 15.6778 11.4643 15.0425 12.8169 13.9809L18.5757 19.7397C18.9118 20.0758 19.4118 20.0758 19.7479 19.7397C20.084 19.4036 20.084 18.9036 19.7479 18.5675ZM1.6805 7.84505C1.6805 4.45126 4.47587 1.69278 7.90655 1.69278C11.3372 1.69278 14.1326 4.45126 14.1326 7.84505C14.1326 11.2388 11.3372 13.9973 7.90655 13.9973C4.47587 13.9973 1.6805 11.2347 1.6805 7.84505Z" fill="#B3B3B3"/>
-                        </svg>
-                        </button>
+                <div class="arrow-right">
+                    <div class="arrow-bg">
+                        <div class="arrow"></div>
+                    </div>
                 </div>
-                <div class="header__accout">
-                    <p>login</p>
+                <div class="slider-track">
+                    <div class="slider-item">
+                        <div class="section__card"></div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="section__card"></div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="section__card"></div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="section__card"></div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="section__card"></div>
+                    </div>
                 </div>
             </div>
-        </header>
-        <main>
+        </div>
+    </main>
+    <footer>
 
-        </main>
-        <footer>
-
-        </footer>
+    </footer>
 </body>
+
 </html>
