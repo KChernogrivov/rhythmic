@@ -49,7 +49,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Righteous";
+  font-family: "Righteous", sans-serif;
 }
 
 .header {
@@ -135,5 +135,12 @@ body {
   outline: 0 !important;
   border: 0;
   cursor: pointer;
+}
+
+@media screen and (max-width: 770px) {
+  .header__nav,
+  .header__search {
+    display: none;
+  }
 }
 </style>
