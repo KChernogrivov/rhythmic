@@ -23,6 +23,7 @@
 <style scoped>
 .section__list {
   font-size: 1.8rem;
+  font-weight: bold;
   margin-top: 5vh;
   display: flex;
   list-style: none;
@@ -38,12 +39,24 @@
   padding: 0 3rem 0 3rem;
   text-decoration: none;
   border-bottom: 1px solid #535353;
-  transition: 0.5s;
+  transition: 0.25s;
+}
+
+.section__element > a {
+  transition: 0.25s;
 }
 
 .section__element:hover {
   border-color: #1db954;
+}
+
+.section__element:hover a {
+  color: #1db954;
+}
+
+.section__element > a {
   color: #b3b3b3;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1140px) {

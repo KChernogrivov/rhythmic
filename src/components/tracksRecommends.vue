@@ -2,12 +2,20 @@
   <div class="section section__tracks">
     <h2 class="section__title">Tracks</h2>
     <div class="trackList">
-      <div class="trackList__track"></div>
-      <div class="trackList__track"></div>
-      <div class="trackList__track"></div>
-      <div class="trackList__track"></div>
-      <div class="trackList__track"></div>
-      <div class="trackList__track"></div>
+      <div class="trackList__column">
+        <div class="trackList__track"></div>
+        <div class="trackList__track"></div>
+        <div class="trackList__track"></div>
+        <div class="trackList__track"></div>
+        <div class="trackList__track"></div>
+      </div>
+      <div class="trackList__column">
+        <div class="trackList__track"></div>
+        <div class="trackList__track"></div>
+        <div class="trackList__track"></div>
+        <div class="trackList__track"></div>
+        <div class="trackList__track"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -20,14 +28,22 @@ export default {
 
 <style scoped>
 .trackList {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
-  gap: 30px;
+}
+
+.trackList__column {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
 }
 
 .trackList__track {
   height: 66px;
+  margin-top: 20px;
+  width: 100%;
   border: 1px solid #b3b3b3;
   border-radius: 10px;
   background-color: #212121;

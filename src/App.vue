@@ -3,7 +3,7 @@
 <template>
   <header class="header">
     <div class="header__wrapper">
-      <h1 class="header__logo">Rhythmic</h1>
+      <h1 class="header__logo"><a href="" class="header__logo">Rhythmic</a></h1>
       <div class="nav header__nav">
         <ul class="nav__list">
           <li class="nav__element"><a href="#" class="nav__link">ABOUT</a></li>
@@ -45,11 +45,14 @@
 </template>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Righteous", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
 }
 
 .header {
@@ -85,9 +88,6 @@ body {
 }
 
 .header__logo {
-  font-family: "Righteous";
-  font-style: normal;
-  font-weight: 400;
   font-size: 2rem;
   line-height: 60px;
   color: #1db954;
@@ -95,8 +95,6 @@ body {
 }
 
 .header__account {
-  font-family: "Righteous";
-  font-style: normal;
   font-size: 1rem;
   line-height: 30px;
   font-weight: 800;
@@ -116,7 +114,6 @@ body {
   padding: 0.4rem 2rem;
   text-decoration: none;
   color: #d9d9d9;
-  font-family: "Righteous";
   font-size: 1rem;
   line-height: 29.8px;
 }
