@@ -3,6 +3,7 @@
 <template>
   <main class="main">
     <homeNavigation></homeNavigation>
+    <artists></artists>
   </main>
 </template>
 
@@ -17,11 +18,13 @@
 <script>
 // @ is an alias to /src
 import homeNavigation from "@/components/homeNavigation.vue";
+import artists from "@/components/artists.vue";
 
 export default {
   name: "artistsView",
   components: {
     homeNavigation,
+    artists,
   },
 };
 </script>

@@ -70,9 +70,6 @@ export default {
   height: 2rem;
   overflow-wrap: break-word;
 }
-.slider-item {
-  margin-right: 5vw;
-}
 .slider-container {
   width: 100%;
   position: relative;
@@ -80,6 +77,7 @@ export default {
 }
 .slider-track {
   display: flex;
+  gap: 45px;
   transition-duration: 0.5s;
 }
 .arrow {

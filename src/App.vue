@@ -150,7 +150,7 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 900px) {
   .header__nav,
   .header__search {
     display: none;

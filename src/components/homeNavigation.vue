@@ -29,6 +29,7 @@
   list-style: none;
   width: 100%;
   border-bottom: 1px solid #535353;
+  overflow: hidden;
 }
 
 .section__element {
@@ -68,7 +69,7 @@
 
 @media screen and (max-width: 1140px) {
   * {
-    font-size: 12px;
+    font-size: 1.4rem;
   }
 }
 </style>

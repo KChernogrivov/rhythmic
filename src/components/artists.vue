@@ -1,34 +1,34 @@
 <template>
   <div class="section">
-    <h2 class="section__title">Artists</h2>
-    <div class="slider-container">
-      <div class="arrow-left">
-        <div class="arrow-bg">
-          <div class="arrow"></div>
-        </div>
+    <h2 class="section__title">Popular Artists</h2>
+    <div class="cardList">
+      <div class="card cardList_card">
+        <div class="card__cover"></div>
+        <div class="card__title">New artist</div>
       </div>
-      <div class="arrow-right">
-        <div class="arrow-bg">
-          <div class="arrow"></div>
-        </div>
+      <div class="card cardList_card">
+        <div class="card__cover"></div>
+        <div class="card__title">New artist</div>
       </div>
-      <div class="slider-track">
-        <div class="slider-item">
-          <div class="card section__card"></div>
-          <div class="card__title">NameNameNameNameNameNameNameName</div>
-        </div>
-        <div class="slider-item">
-          <div class="section__card"></div>
-        </div>
-        <div class="slider-item">
-          <div class="section__card"></div>
-        </div>
-        <div class="slider-item">
-          <div class="section__card"></div>
-        </div>
-        <div class="slider-item">
-          <div class="section__card"></div>
-        </div>
+      <div class="card cardList_card">
+        <div class="card__cover"></div>
+        <div class="card__title">New artist</div>
+      </div>
+      <div class="card cardList_card">
+        <div class="card__cover"></div>
+        <div class="card__title">New artist</div>
+      </div>
+      <div class="card cardList_card">
+        <div class="card__cover"></div>
+        <div class="card__title">New artist</div>
+      </div>
+      <div class="card cardList_card">
+        <div class="card__cover"></div>
+        <div class="card__title">New artist</div>
+      </div>
+      <div class="card cardList_card">
+        <div class="card__cover"></div>
+        <div class="card__title">New artist</div>
       </div>
     </div>
   </div>
@@ -36,7 +36,7 @@
 
 <script>
 export default {
-  name: "trackRecommends",
+  name: "artistsList",
 };
 </script>
 
@@ -45,7 +45,7 @@ export default {
   display: block;
   width: 100%;
 }
-.section__card {
+.card__cover {
   display: flex;
   position: relative;
   border-radius: 10px;
@@ -59,7 +59,13 @@ export default {
   transition: 0.2s;
 }
 
-.section__card:hover {
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+}
+
+.card__cover:hover {
   border: 2px solid #1db954;
 }
 
@@ -69,6 +75,7 @@ export default {
   width: 14rem;
   height: 2rem;
   overflow-wrap: break-word;
+  overflow: hidden;
 }
 .slider-container {
   width: 100%;
@@ -77,7 +84,6 @@ export default {
 }
 .slider-track {
   display: flex;
-  gap: 45px;
   transition-duration: 0.5s;
 }
 .arrow {
