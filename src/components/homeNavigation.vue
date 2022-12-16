@@ -29,7 +29,6 @@
   list-style: none;
   width: 100%;
   border-bottom: 1px solid #535353;
-  overflow: hidden;
 }
 
 .section__element {

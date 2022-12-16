@@ -3,14 +3,84 @@
     <h2 class="section__title">Artists</h2>
     <div class="slider-container">
       <div class="arrow-left">
-        <div class="arrow-bg">
-          <div class="arrow"></div>
-        </div>
+        <svg
+          version="1.1"
+          id="Capa_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 49.656 49.656"
+          style="enable-background: new 0 0 49.656 49.656"
+          xml:space="preserve"
+        >
+          <g>
+            <polygon
+              style="fill: #1db954"
+              points="14.535,48.242 11.707,45.414 32.292,24.828 11.707,4.242 14.535,1.414 37.949,24.828 	"
+            />
+            <path
+              style="fill: #1db954"
+              d="M14.535,49.656l-4.242-4.242l20.585-20.586L10.293,4.242L14.535,0l24.829,24.828L14.535,49.656z
+		 M13.121,45.414l1.414,1.414l22-22l-22-22l-1.414,1.414l20.585,20.586L13.121,45.414z"
+            />
+          </g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+        </svg>
       </div>
       <div class="arrow-right">
-        <div class="arrow-bg">
-          <div class="arrow"></div>
-        </div>
+        <svg
+          version="1.1"
+          id="Capa_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 49.656 49.656"
+          style="enable-background: new 0 0 49.656 49.656"
+          xml:space="preserve"
+        >
+          <g>
+            <polygon
+              style="fill: #1db954"
+              points="14.535,48.242 11.707,45.414 32.292,24.828 11.707,4.242 14.535,1.414 37.949,24.828 	"
+            />
+            <path
+              style="fill: #1db954"
+              d="M14.535,49.656l-4.242-4.242l20.585-20.586L10.293,4.242L14.535,0l24.829,24.828L14.535,49.656z
+		 M13.121,45.414l1.414,1.414l22-22l-22-22l-1.414,1.414l20.585,20.586L13.121,45.414z"
+            />
+          </g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+        </svg>
       </div>
       <div class="slider-track">
         <div class="slider-item">
@@ -87,39 +157,30 @@ export default {
   border-right: #cacaca 3px solid;
   position: absolute;
 }
-.arrow-bg {
-  width: 30px;
-  height: 30px;
-  background: #fff;
-  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  position: relative;
-  opacity: 0.8;
+
+.arrow-left,
+.arrow-right {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
   cursor: pointer;
+  transition: 0.1s;
 }
-.arrow-left .arrow {
-  transform: rotate(-135deg);
-  top: 11px;
-  left: 11px;
-}
-.arrow-right .arrow {
-  transform: rotate(45deg);
-  top: 11px;
-  left: 10px;
+
+.arrow-left:hover,
+.arrow-right:hover {
+  width: 60px;
+  height: 60px;
 }
 .arrow-left {
-  position: absolute;
-  top: 50%;
   left: 10px;
-  transform: translateY(-50%);
-  z-index: 2;
+  transform: translateY(-50%) rotate(180deg);
 }
 .arrow-right {
-  position: absolute;
-  top: 50%;
   right: 10px;
   transform: translateY(-50%);
-  z-index: 2;
 }
 
 .section {
