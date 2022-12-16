@@ -3,6 +3,7 @@
 <template>
   <main class="main">
     <homeNavigation></homeNavigation>
+    <newTracks></newTracks>
   </main>
 </template>
 
@@ -17,11 +18,13 @@
 <script>
 // @ is an alias to /src
 import homeNavigation from "@/components/homeNavigation.vue";
+import newTracks from "@/components/newTracks.vue";
 
 export default {
   name: "newestView",
   components: {
     homeNavigation,
+    newTracks,
   },
 };
 </script>

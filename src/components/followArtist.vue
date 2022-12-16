@@ -1,6 +1,6 @@
 <template>
   <div class="section">
-    <h2 class="section__title">Artists</h2>
+    <h2 class="section__title">Follow Artists</h2>
     <div class="slider-container">
       <div class="arrow-left">
         <div class="arrow-bg">
@@ -14,8 +14,8 @@
       </div>
       <div class="slider-track">
         <div class="slider-item">
-          <div class="card section__card"></div>
-          <div class="card__title">NameNameNameNameNameNameNameName</div>
+          <div class="card section__card">+</div>
+          <div class="card__title">New artist</div>
         </div>
         <div class="slider-item">
           <div class="section__card"></div>

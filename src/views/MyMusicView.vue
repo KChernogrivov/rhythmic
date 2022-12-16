@@ -3,6 +3,8 @@
 <template>
   <main class="main">
     <homeNavigation></homeNavigation>
+    <FollowArtist></FollowArtist>
+    <TracksRecommends></TracksRecommends>
   </main>
 </template>
 
@@ -16,12 +18,16 @@
 
 <script>
 // @ is an alias to /src
+import FollowArtist from "@/components/followArtist.vue";
 import homeNavigation from "@/components/homeNavigation.vue";
+import TracksRecommends from "@/components/tracksRecommends.vue";
 
 export default {
   name: "MyMusicView",
   components: {
     homeNavigation,
+    FollowArtist,
+    TracksRecommends,
   },
 };
 </script>

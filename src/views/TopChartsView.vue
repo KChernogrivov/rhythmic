@@ -3,6 +3,7 @@
 <template>
   <main class="main">
     <homeNavigation></homeNavigation>
+    <topCharts></topCharts>
   </main>
 </template>
 
@@ -16,12 +17,14 @@
 
 <script>
 // @ is an alias to /src
+import topCharts from "@/components/topCharts.vue";
 import homeNavigation from "@/components/homeNavigation.vue";
 
 export default {
   name: "topChartsView",
   components: {
     homeNavigation,
+    topCharts,
   },
 };
 </script>

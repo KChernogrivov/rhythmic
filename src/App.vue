@@ -63,6 +63,17 @@ body {
   background: #1e1e1e;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: #535353;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #1db954;
+  border-radius: 10px;
+}
+
 .header__wrapper {
   width: 80%;
   padding: 1rem 0;
@@ -125,6 +136,11 @@ body {
   border: 0;
   border-bottom: 1px solid #535353;
   outline: 0 !important;
+  transition: 0.2s;
+}
+
+.header__searchField:focus {
+  border-color: #1db954;
 }
 
 .form__submit {

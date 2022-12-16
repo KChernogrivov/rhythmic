@@ -36,10 +36,17 @@
   position: relative;
   top: 1px;
   display: flex;
-  padding: 0 3rem 0 3rem;
+  align-items: flex-end;
+  margin: 0 0 0 1rem;
+  padding: 0 2rem 0 0.5rem;
   text-decoration: none;
   border-bottom: 1px solid #535353;
   transition: 0.25s;
+}
+
+.section__element:first-child {
+  margin: 0;
+  padding: 0 2rem 0 0;
 }
 
 .section__element > a {

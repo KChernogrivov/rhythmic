@@ -44,9 +44,17 @@ export default {
   height: 66px;
   margin-top: 20px;
   width: 100%;
-  border: 1px solid #b3b3b3;
   border-radius: 10px;
-  background-color: #212121;
+  background-color: #282828;
+  transition: 0.2s;
+}
+
+.trackList__track:nth-child(1) {
+  margin-top: 0;
+}
+
+.trackList__track:hover {
+  outline: 2px solid #1db954;
 }
 
 .section {
